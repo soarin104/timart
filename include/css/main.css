@@ -1,0 +1,520 @@
+/* visual */
+.visual{
+	background: #e9f0fa;
+}
+
+.visual .inner{
+	display: flex;
+	align-items: center;
+	position: relative;
+	height: 880px;
+}
+
+.visual .inner .txtBox{
+	position: relative;
+	z-index: 2;
+}
+
+.visual .inner h2{
+	font-size: 46px;
+	line-height: 1.3;
+}
+
+.visual .inner h2 strong{
+	color: var(--pCol);
+}
+
+.visual .inner p{
+	font-size: 24px;
+	line-height: 1.4;
+	margin: 30px 0 35px;
+}
+
+.visual .inner a{
+	border-radius: 100px;
+	background: var(--mainCol);
+	display: inline-block;
+	padding: 0px 30px;
+	height: 50px;
+	line-height: 48px;
+	font-weight: 500;
+	color: #fff;
+	font-size: 22px;
+	transition: all 0.3s;
+}
+
+.visual .inner a:hover{
+	background: var(--pCol);
+	transform: scale(1.05);
+}
+
+.visual .inner .imgBox{
+	position: absolute;
+	top: 50%;
+	right: -40px;
+	transform: translate(0,-50%);
+	width: 68%;
+	max-width: 868px;
+}
+
+.visual .inner .imgBox span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.visual .inner .imgBox span:first-child{
+	position: static;
+	transform: none;
+}
+
+.visual .inner .imgBox span:nth-child(1) img{
+	animation-delay: 0.2s;
+}
+
+.visual .inner .imgBox span:nth-child(2) img{
+	animation-delay: 0.4s;
+}
+
+.visual .inner .imgBox span:nth-child(3) img{
+	animation-delay: 0.6s;
+}
+
+.visual .inner .imgBox span:nth-child(4) img{
+	animation-delay: 0.8s;
+}
+
+/* cardBox */
+.cardBox{
+	padding: 150px 0;
+}
+
+.cardBox .inner{
+	max-width: 831px;
+	margin: auto;
+}
+
+.cardCon{
+	margin-bottom: 140px;
+}
+
+.cardCon:last-child{
+	margin-bottom: 0;
+}
+
+.cardCon h2 span{
+	font-size: 28px;
+	display: block;
+	margin-bottom: 15px;
+	color: var(--pCol);
+}
+
+.cardCon h2 strong{
+	color: #000;
+	font-size: 50px;
+	line-height: 1.3;
+	display: block;
+}
+
+.cardCon .hash{
+	margin: 20px 0 25px;
+	display: flex;
+	align-items: center;
+}
+
+.cardCon .hash li{
+	color: var(--pCol);
+	font-size: 18px;
+	background: #e9f0fa;
+	padding: 10px 30px;
+	border-radius: 5px;
+	margin-right: 20px;
+	font-weight: 500;
+}
+
+.cardCon p{
+	color: #888889;
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+.cardCon .imgBox{
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+.cardCon .imgBox video{
+	aspect-ratio: 5/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* sloganBox */
+.sloganBox{
+	background: #fafafc;
+	padding: 140px 0;
+}
+
+.sloganBox .tit{
+	text-align: center;
+	font-size: 50px;
+	font-weight: 600;
+	margin-bottom: 35px;
+}
+
+.sloganBox .cateBox ul{
+	display: flex;
+	justify-content: space-between;
+	max-width: 950px;
+	margin: auto;
+	position: relative;
+	bottom: auto;
+}
+
+.sloganBox .cateBox ul li{
+	border: 2px solid var(--pCol);
+	font-size: 14px;
+	text-align: center;
+	height: 54px;
+	line-height: 50px;
+	width: 23%;
+	border-radius: 10px;
+	transition: all 0.3s;
+	cursor: pointer;
+	float: inherit;
+	font-weight: 500;
+}
+
+.sloganBox .cateBox ul li button{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	font-weight: 500;
+	padding: 0;
+	line-height: 1;
+	font-size: 0px;
+	color: var(--pCol);
+	display: block;
+}
+
+.sloganBox .cateBox ul li button::before{
+	display: none !important;
+}
+
+.sloganBox .cateBox ul li button::after{
+	font-size: 14px;
+	color: var(--pCol);
+	font-weight: 500 !important;
+	display: block;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sloganBox .cateBox ul li:nth-child(1) button::after{
+	content: 'Dynamic Contents';
+}
+
+.sloganBox .cateBox ul li:nth-child(2) button::after{
+	content: 'Time as Goods';
+}
+
+.sloganBox .cateBox ul li:nth-child(3) button::after{
+	content: 'Boundless Wall';
+}
+
+.sloganBox .cateBox ul li:nth-child(4) button::after{
+	content: 'With timart';
+}
+
+.sloganBox .cateBox ul li.slick-active{
+	background: var(--pCol);
+}
+
+.sloganBox .cateBox ul li.slick-active button::after{
+	color: #fff;
+}
+
+.sloganBox .slideUl{
+	margin-top: 40px;
+	margin-bottom: 0 !important;
+}
+
+.sloganBox .slideUl .slideLi{
+	margin: 0 20px;
+	transform: scale(0.8);
+	transition: all 1s;
+	padding: 0 0 30px;
+	position: relative;
+}
+
+.sloganBox .slideUl .slideLi.slick-center{
+	transform: scale(1);
+}
+
+.sloganBox .slideUl .slideLi img{
+	width: 90%;
+	display: block;
+	margin: auto;
+}
+
+.sloganBox .slideUl .slideLi .txtBox{
+	background: #fff;
+	position: relative;
+	z-index: 2;
+	box-shadow: rgba(0,0,0,0.2) 0 0 30px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 500;
+	padding: 20px 5%;
+	border-radius: 20px;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.sloganBox .slideUl .slideLi.slick-center .txtBox{
+	opacity: 1;
+}
+
+.sloganBox .slideUl .slideLi::after{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 90px;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background: linear-gradient(0deg, #fafafc, transparent);
+}
+
+/* videoBox */
+.videoBox{
+	
+}
+
+.videoBox video{
+	width: 100%;
+	vertical-align: middle;
+}
+
+
+/* ----------------------------------------------------------------------------------responsive 1280px */
+@media screen and (max-width: 1280px){
+
+/* visual */
+.visual .inner h2{
+	font-size: 40px;
+}
+
+.visual .inner p{
+	font-size: 18px;
+}
+
+.visual .inner a {
+    height: 40px;
+    line-height: 38px;
+    font-size: 18px;
+}
+
+/* cardCon */
+.cardCon h2 span{
+	font-size: 22px;
+}
+
+.cardCon h2 strong{
+	font-size: 40px;
+}
+
+.cardCon p{
+	font-size: 18px;
+}
+
+.cardCon .hash li{
+	font-size: 16px;
+}
+
+/* sloganBox */
+.sloganBox .tit{
+	font-size: 40px;
+}
+
+
+
+}
+
+
+/* ----------------------------------------------------------------------------------responsive 1000px */
+@media screen and (max-width: 1000px){
+
+
+/* visual */
+.visual .inner{
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: calc(101px + 15vw);
+	padding-bottom: 15vw;
+}
+
+.visual .inner .txtBox{
+	order: 2;
+	text-align: center;
+	width: 100%;
+}
+
+.visual .inner h2{
+	font-size: 6vw;
+}
+
+.visual .inner p{
+	font-size: 3.5vw;
+	margin: 3vw 0 3.5vw;
+}
+
+.visual .inner a{
+	padding: 0px 5vw;
+	height: 8vw;
+	line-height: 8vw;
+	font-size: 3vw;
+}
+
+.visual .inner .imgBox{
+	position: static;
+	top: auto;
+	right: auto;
+	transform: translate(0,0%);
+	width: 100%;
+	order: 1;
+	padding-bottom: 10vw;
+}
+
+.visual .inner .imgBox span:nth-child(1) img{
+	animation-delay: 0.0s;
+}
+
+.visual .inner .imgBox span:nth-child(2) img{
+	animation-delay: 0.2s;
+}
+
+.visual .inner .imgBox span:nth-child(3) img{
+	animation-delay: 0.4s;
+}
+
+.visual .inner .imgBox span:nth-child(4) img{
+	animation-delay: 0.6s;
+}
+
+/* cardBox */
+.cardBox{
+	padding: 15vw 0;
+}
+
+.cardCon{
+	margin-bottom: 12vw;
+}
+
+.cardCon h2 span{
+	font-size: 3vw;
+	margin-bottom: 2vw;
+}
+
+.cardCon h2 strong{
+	font-size: 5vw;
+}
+
+.cardCon .hash{
+	margin: 2vw 0 2.5vw;
+}
+
+.cardCon .hash li{
+	color: var(--pCol);
+	font-size: 3vw;
+	padding: 1vw 3vw;
+	border-radius: 1vw;
+	margin-right: 2vw;
+}
+
+.cardCon p{
+	font-size: 3vw;
+	margin-bottom: 4vw;
+}
+
+.cardCon .imgBox{
+	border-radius: 3vw;
+}
+
+/* sloganBox */
+.sloganBox{
+	padding: 15vw 0;
+}
+
+.sloganBox .tit{
+	font-size: 5vw;
+	margin-bottom: 5vw;
+}
+
+.sloganBox .cateBox ul{
+	flex-wrap: wrap;
+	width: 85%;
+	margin: auto;
+}
+
+.sloganBox .cateBox ul li{
+	border: 1px solid var(--pCol);
+	font-size: 3vw;
+	height: 8vw;
+	line-height: 8vw;
+	width: calc(100%/2 - 3vw/2);
+	border-radius: 1.5vw;
+	margin: 0;
+	margin-top: 2vw;
+}
+
+.sloganBox .cateBox ul li:nth-child(-n+2){
+	margin-top: 0;
+}
+
+.sloganBox .cateBox ul li button::after{
+	font-size: 3vw;
+}
+
+.sloganBox .slideUl{
+	margin-top: 10vw;
+}
+
+.sloganBox .slideUl .slideLi{
+	margin: 0 3vw;
+	padding: 0 0 5vw;
+	opacity: 0;
+}
+
+.sloganBox .slideUl .slideLi.slick-center{
+	opacity: 1;
+}
+
+.sloganBox .slideUl .slideLi::after{
+	display: none;
+}
+
+.sloganBox .slideUl .slideLi img{
+	width: 90%;
+	display: block;
+	margin: auto;
+}
+
+.sloganBox .slideUl .slideLi .txtBox{
+	box-shadow: rgba(0,0,0,0.2) 0 0 5vw;
+	font-size: 4vw;
+	padding: 4vw 5%;
+	border-radius: 2vw;
+}
+
+
+
+}
